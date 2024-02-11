@@ -1,0 +1,317 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Personal Portfolio Website using HTML and CSS | Codehal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2 class="logo"><span>Janaki</span>Devi</h2>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+        </nav>
+        <a href="#" class="btn-talk">Let's Talk</a>
+    </header>
+
+    <div class="home" id="home">
+        <div class="content">
+            <h2>Hi, I'm <span>Joe Greyson</span></h2>
+            <h4>Frontend Developer</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A esse totam provident voluptas similique.
+                Impedit incidunt atque recusandae rem quam.</p>
+            <div class="btn-group">
+                <a href="#">Hire Me</a>
+                <a href="#">See Projects</a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+      </div>
+      
+      <div class="home" id="about">
+        <h2>Section 2</h2>
+        <a href="#section1">Click Me to Smooth Scroll to Section 1 Above</a>
+      </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Personal Portfolio Website using HTML and CSS | Codehal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="logo">
+            <img src="https://www.pngitem.com/pimgs/m/525-5256428_letter-j-png-letter-j-transparent-background-png.png"
+                width="50px" height="50px"></img>
+        </div>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#about">AboutMe</a>
+            <a href="#MyProjects">MyProjects</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <a href="#" class="btn-talk">Let's Talk</a>
+        <!-- <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div> -->
+    </header>
+
+    <div class="home" id="home">
+        <div class="content">
+            <h2>Hi, I'm <span>Janaki Devi</span></h2>
+            <h4>Full Stack Web Developer</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A esse totam provident voluptas similique.
+                Impedit incidunt atque recusandae rem quam.</p>
+            <div class="btn-group">
+                <a href="">My Resume</a>
+                <a href="#MyProjects">See My Projects</a>
+            </div>
+
+        </div>
+        <img src="janaki.jpg" alt="Janaki" class="image" width="80%" height="90%">
+    </div>
+
+    </div>
+
+    <div class="about" id="about">
+        <div id="about">
+            <div class="container">
+                <h1>About Me</h1>
+                <p>
+                    Passionate computer science student with hands-on experience in diverse web development projects
+                    using various technologies. Excited about the prospect of applying my skills and passion for
+                    learning in an internship or any opportunity that comes my way.
+                </p>
+                <div class="about-buttons">
+                    <button type="button" class="tablinks active-links" onclick="display('skills')">Skills</button>
+                    <button type="button" class="tablinks active-links"
+                        onclick="display('Experience')">Experience</button>
+                    <button type="button" class="tablinks active-links"
+                        onclick="display('Education')">Education</button>
+                </div>
+                <div class="tab-contents active" id="skills">
+                    <div class="skill-card Frontend">
+                        <h2>Frontend</h2>
+                        <p>Full Stack Web Developer</p>
+                        <p>Python Developer</p>
+                    </div>
+                    <div class="skill-card backend">
+                        <h2>Backend</h2>
+                        <p>NodeJs</p>
+                    </div>
+                    <div class="skill-card database">
+                        <h2>Database</h2>
+                        <p>Mongodb</p>
+                        <p>Oracle</p>
+                    </div>
+                    <div class="skill-card cloud">
+                        <h2>Cloud</h2>
+                        <p>IBM cloud</p>
+                        <p>AWS cloud</p>
+                    </div>
+                    <div class="skill-card other-skills">
+                        <h2>Other Skills</h2>
+                        <p>Data Science</p>
+                        <p>GitHub</p>
+                        <p>Communication skills</p>
+                        <p>Python</p>
+                        <p>Java</p>
+                    </div>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <p><span>Teachnook Company:</span>Data Science</p>
+                    <p><span>Slash Mark Intern:</span>Full Stack Web Development</p>
+                    <p><span>Bharat Intern:</span>Full Stack Web Development</p>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li>
+                            <span>Primary Education -2019</span>Oxford School,Palnadu(dt)
+                        </li>
+                        <li>
+                            <span>Secondary Education -2021</span>Vit College,Palnadu(dt)
+                        </li>
+                        <li>
+                            <span>Graduation -2025</span>
+                            Narasaropeta Engineering College Narasaraopet(Town) ,Palnadu
+                            (dt)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="MyProjects" id="MyProjects">
+        <div class="container">
+            <h1>My Projects</h1>
+            <div class="videos-container">
+                <div class="video-card">
+                    <div><video controls>
+                            <source src="myprojectvideos/blogger.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video></div>
+                    <div><video controls>
+                            <source src="myprojectvideos/registration form.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video></div>
+                    <div><video controls>
+                            <source src="myprojectvideos/user-admin assignment.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video></div>
+                    <div><video controls>
+                            <source src="myprojectvideos/user-admin assignment.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="certificates" id="certificates">
+        <div class="container">
+            <h1>My Certificates</h1>
+            <div class="certificates-card">
+                <div class="polaroid">
+                    <img src="certificates/jan.jpg" alt="5 Terre" style="width:100%">
+                    <div class="container">
+                        <p>Cinque Terre</p>
+                    </div>
+                </div>
+
+                <div class="polaroid">
+                    <img src="certificates/jan.jpg" alt="Norther Lights" style="width:100%">
+                    <div class="container">
+                        <p>Northern Lights</p>
+                    </div>
+                </div>
+                <div class="polaroid">
+                    <img src="certificates/jan.jpg" alt="5 Terre" style="width:100%">
+                    <div class="container">
+                        <p>Cinque Terre</p>
+                    </div>
+                </div>
+
+                <div class="polaroid">
+                    <img src="certificates/jan.jpg" alt="Norther Lights" style="width:100%">
+                    <div class="container">
+                        <p>Northern Lights</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <div class="container">
+            <h1>contact form</h1>
+            <form action="/action_page.php">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country">Country</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="country" name="country">
+                            <option value="australia">India</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="Write something.."
+                            style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="first">
+        <p>This is my portfolio providing all the details about my Education,Skills,Projects done by me..</p>
+        <a href="mailto:chinnam.janakidevi123@gmail.com" class="btn">Email Me</a>
+    </div>
+    <div class="icons">
+        <a> <i class="fa-brands fa-github"></i></a>
+        <a> <i class="fa-brands fa-twitter"></i></a>
+        <a> <i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+    <div class="second">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#MyProjects">MyProjects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+<script>
+
+    function display(type) {
+        if (type == "skills") {
+            document.getElementById("education").style.display = "none";
+            document.getElementById("experience").style.display = "none";
+            document.getElementById("skills").style.display = "flex";
+        }
+        else if (type == "Education") {
+            document.getElementById("experience").style.display = "none";
+            document.getElementById("skills").style.display = "none";
+            document.getElementById("education").style.display = "block";
+        }
+        else if (type == "Experience") {
+            document.getElementById("education").style.display = "none";
+            document.getElementById("skills").style.display = "none";
+            document.getElementById("experience").style.display = "block";
+        }
+    }
+</script>
+
+</html>
