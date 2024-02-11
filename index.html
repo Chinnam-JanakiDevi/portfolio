@@ -86,7 +86,8 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A esse totam provident voluptas similique.
                 Impedit incidunt atque recusandae rem quam.</p>
             <div class="btn-group">
-                <a href="">My Resume</a>
+                <a href="https://drive.google.com/file/d/1saZn2GyTZVQu8atMt31auchKnhzmousr/view?usp=drive_link">My
+                    Resume</a>
                 <a href="#MyProjects">See My Projects</a>
             </div>
 
@@ -226,47 +227,14 @@
     <div class="contact" id="contact">
         <div class="container">
             <h1>contact form</h1>
-            <form action="/action_page.php">
-                <div class="row">
-                    <div class="col-25">
-                        <label for="fname">First Name</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="lname">Last Name</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="country">Country</label>
-                    </div>
-                    <div class="col-75">
-                        <select id="country" name="country">
-                            <option value="australia">India</option>
-                            <option value="canada">Canada</option>
-                            <option value="usa">USA</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="subject">Subject</label>
-                    </div>
-                    <div class="col-75">
-                        <textarea id="subject" name="subject" placeholder="Write something.."
-                            style="height:200px"></textarea>
-                    </div>
-                </div>
-                <div class="row">
-                    <input type="submit" value="Submit">
-                </div>
+            <form name="submit-to-google-sheet">
+                <h4>Contact Us</h4>
+                <input type="email" name="email" placeholder="Email">
+                <input type="text" name="name" placeholder="Name">
+                <textarea name="message" rows="7" placeholder="Your Message"></textarea><br>
+                <input type="submit" value="Submit" id="submit">
+                <span id="msg"></span>
+
             </form>
         </div>
     </div>
@@ -312,6 +280,23 @@
             document.getElementById("experience").style.display = "block";
         }
     }
+    // https://script.google.com/macros/s/AKfycby6tE9SNutSrw-LAaTcNfjyREEpcTnj6a4uQSpYHJMWmpyR-SP_T-kHYkaSZyj2qbuQ/exec
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby6tE9SNutSrw-LAaTcNfjyREEpcTnj6a4uQSpYHJMWmpyR-SP_T-kHYkaSZyj2qbuQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message Sent Successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
 </script>
 
 </html>
