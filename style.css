@@ -65,6 +65,7 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: aliceblue;
 }
 
 /* home styles */
@@ -104,6 +105,7 @@ header {
 
 .content h4 {
     font-size: 2em;
+    color: rgba(0, 0, 0, 0.858);
 }
 
 .content p {
@@ -218,6 +220,8 @@ footer .second nav ul li {
 #about {
     padding: 45px 0px;
     color: black;
+    background-color: aliceblue;
+
 }
 
 .about .container h1 {
@@ -354,6 +358,8 @@ footer .second nav ul li {
 
 .MyProjects {
     text-align: center;
+    background-color: aliceblue;
+
 }
 
 .video-card {
@@ -374,6 +380,9 @@ footer .second nav ul li {
 }
 
 /* certifice style */
+#certificates{
+    background-color: aliceblue;
+}
 #certificates .container {
     padding-top: 7%;
     color: #7d2ae8;
@@ -399,14 +408,50 @@ div.container {
 }
 
 /* contact style */
-.contact .container h1 {
+.contact{
+    background-color: aliceblue;
+
+}
+.contact .container {
     padding-top: 7%;
     margin-bottom: 10px;
-    text-align: center;
     color: #7d2ae8;
+
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.contact .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact .container .left-side {
+    flex-basis: 50%;
+    font-size: x-large;
+    margin-top: 10%; /* Adjust as needed */
+}
+
+.contact .container .right-side {
+    flex-basis: 50%; /* Adjust as needed */
+}
+
+.contact .container .left-side  ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact .container .left-side ul li {
+    margin-bottom: 10px;
+}
+
+.contact .container .left-side ul li a {
+    text-decoration: none;
+    color: #7d2ae8;
+}
+
+.contact .container .left-side ul li i {
+    margin-right: 10px;
+}
 h4{
 	margin-bottom: 10px;
 	font-size: 24px;
