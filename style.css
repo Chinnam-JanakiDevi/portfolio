@@ -477,3 +477,101 @@ textarea{
 #submit:hover{
 	background-color: #333333;
 }
+
+
+
+/* media queries */
+@media screen and (min-width: 480px) {
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 30px;
+        background-color: #7d2ae8;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+    }
+    .home {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 100px;
+    }
+    
+
+    .image {
+        padding-top: 10px;
+        max-width: 50%;
+        /* Adjust as needed */
+        margin-top: 9%;
+        border-radius: 50%;
+        /* Add rounded corners to the image */
+    }
+    
+    .content {
+        max-width: 1000px;
+        color: #555;
+    }
+    
+    .content h2 {
+        font-size: 3em;
+    }
+    
+    .content h2 span {
+        color: #7d2ae8;
+    }
+    
+    .content h4 {
+        font-size: 2em;
+        color: rgba(0, 0, 0, 0.858);
+    }
+    
+    .content p {
+        padding: 10px 0 40px 0;
+    }
+    
+    .btn-group a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 40px;
+        background: #7d2ae8;
+        border-radius: 10px;
+        border: 2px solid #7d2ae8;
+        font-weight: 500;
+        transition: .3s;
+    }
+    
+    .btn-group a:hover:nth-child(1) {
+        color: #7d2ae8;
+        background: transparent;
+    }
+    
+    .btn-group a:nth-child(2) {
+        color: #7d2ae8;
+        background: transparent;
+        margin-left: 30px;
+        padding: 10px 30px;
+    }
+    
+    .btn-group a:hover:nth-child(2) {
+        color: #fff;
+        background: #7d2ae8;
+    }
+    
+  }

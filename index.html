@@ -59,10 +59,9 @@
 
 <body>
     <header>
-
         <div class="logo">
             <img src="https://www.pngitem.com/pimgs/m/525-5256428_letter-j-png-letter-j-transparent-background-png.png"
-                width="50px" height="50px"></img>
+                width="50px" height="50px">
         </div>
         <nav class="navigation">
             <a href="#">Home</a>
@@ -245,7 +244,7 @@
             </div>
         </div>
     </div>
-    
+
 </body>
 <footer>
     <div class="first">
@@ -296,15 +295,15 @@
     form.addEventListener("submit", (e) => {
         e.preventDefault();
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            msg.innerHTML = "Message Sent Successfully";
-            setTimeout(function () {
-              msg.innerHTML = "";
-            }, 5000);
-            form.reset();
-          })
-          .catch((error) => console.error("Error!", error.message));
-      });
+            .then((response) => {
+                msg.innerHTML = "Message Sent Successfully";
+                setTimeout(function () {
+                    msg.innerHTML = "";
+                }, 5000);
+                form.reset();
+            })
+            .catch((error) => console.error("Error!", error.message));
+    });
 </script>
 
 </html>
