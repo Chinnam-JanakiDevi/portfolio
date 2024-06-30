@@ -369,11 +369,11 @@ footer {
 
 footer .first {
     padding-left: 15px;
-
 }
 
 footer .icons a {
     color: white;
+    display: flex;
 }
 
 footer .icons i {
@@ -415,20 +415,24 @@ footer .second nav ul li {
 
 .first {
     color: white;
-    font-size: x-large;
+    font-size:1.2em;
     margin: 3px;
+}
 
+.first a {
+    color: black;
 }
 
 .first .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: red;
-    color: #fff;
+    background-color: white;
+    color: black;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
-    font-size: 15px;
+    font-size: 1.1em;
+    font-weight: bold;
 }
 
 .second {
@@ -500,7 +504,7 @@ footer .second nav ul li {
     width: 80%;
     height:80%;
   } */
-  
+
 .portfolio-details .portfolio-details-slider {
     width: 100%;
 }
@@ -521,6 +525,7 @@ footer .second nav ul li {
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
     background-color: #0078ff;
 }
+
 
 .portfolio-details .portfolio-info {
     padding: 30px;
